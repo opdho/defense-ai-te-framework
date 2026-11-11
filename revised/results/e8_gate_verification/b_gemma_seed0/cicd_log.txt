@@ -1,0 +1,27 @@
+NOTE build, security and deployment lines are simulated by 05_simulate_cicd_gate.py, not executed
+[22:42:18][❌ FAIL] G0 MC1: MISSING
+[22:42:18][✅ OK  ] G0 MC2: satisfied by SCN_012
+[22:42:18][❌ FAIL] model_A INCOMPLETE (G0: MC1): deployment blocked
+[22:42:18][ℹ INFO] reference only g1_clean_map50: clean_map50 >= 0.7 (observed=0.7355, pass=True)
+[22:42:18][ℹ INFO] reference only g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.3882, pass=False)
+[22:42:18][ℹ INFO] reference only g3_rpc50: rpc50 >= 0.65 (observed=0.6933, pass=True)
+[22:42:18][ℹ INFO] reference only g4_critical_failure_count: critical_failure_count <= 0 (observed=0.0, pass=True)
+VERDICT model_A: INCOMPLETE (G0: MC1)
+[22:42:18][❌ FAIL] model_B INCOMPLETE (G0: MC1): deployment blocked
+[22:42:18][ℹ INFO] reference only g1_clean_map50: clean_map50 >= 0.7 (observed=0.7695, pass=True)
+[22:42:18][ℹ INFO] reference only g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.6146, pass=True)
+[22:42:18][ℹ INFO] reference only g3_rpc50: rpc50 >= 0.65 (observed=0.8756, pass=True)
+[22:42:18][ℹ INFO] reference only g4_critical_failure_count: critical_failure_count <= 0 (observed=0.0, pass=True)
+VERDICT model_B: INCOMPLETE (G0: MC1)
+[22:42:18][❌ FAIL] model_C INCOMPLETE (G0: MC1): deployment blocked
+[22:42:18][ℹ INFO] reference only g1_clean_map50: clean_map50 >= 0.7 (observed=0.7497, pass=True)
+[22:42:18][ℹ INFO] reference only g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.5767, pass=True)
+[22:42:18][ℹ INFO] reference only g3_rpc50: rpc50 >= 0.65 (observed=0.8561, pass=True)
+[22:42:18][ℹ INFO] reference only g4_critical_failure_count: critical_failure_count <= 0 (observed=0.0, pass=True)
+VERDICT model_C: INCOMPLETE (G0: MC1)
+[22:42:18][❌ FAIL] model_D INCOMPLETE (G0: MC1): deployment blocked
+[22:42:18][ℹ INFO] reference only g1_clean_map50: clean_map50 >= 0.7 (observed=0.765, pass=True)
+[22:42:18][ℹ INFO] reference only g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.4334, pass=False)
+[22:42:18][ℹ INFO] reference only g3_rpc50: rpc50 >= 0.65 (observed=0.7144, pass=True)
+[22:42:18][ℹ INFO] reference only g4_critical_failure_count: critical_failure_count <= 0 (observed=0.0, pass=True)
+VERDICT model_D: INCOMPLETE (G0: MC1)

@@ -1,0 +1,13 @@
+﻿scenario_id,weather,time_of_day,target_density,sensor_noise_level,adversarial_camouflage,visibility_km,difficulty,bucket,corruption_family,severity,safety_critical,precision,recall,map50,map50_95,clean_map50_reference,relative_to_clean,drop_from_clean_pct
+SCN_001,clear,day,medium,0.03,False,10.0,easy,clean_reference,none,0,False,0.769863,0.677563,0.749794,0.501087,0.749655,1.000185,0.0
+SCN_002,clear,day,low,0.05,False,9.0,easy,clean_reference,none,0,False,0.778906,0.675133,0.749516,0.50127,0.749655,0.999815,0.02
+SCN_003,rainy,day,medium,0.15,False,4.5,medium,operational,rain,1,False,0.775268,0.674541,0.74816,0.497184,0.749655,0.998006,0.2
+SCN_004,foggy,day,low,0.22,False,1.2,medium,operational,fog,1,False,0.695125,0.688417,0.725558,0.477534,0.749655,0.967856,3.21
+SCN_005,clear,dusk,medium,0.28,False,8.0,medium,operational,dusk,1,False,0.771221,0.681765,0.747974,0.494849,0.749655,0.997758,0.22
+SCN_006,hazy,day,high,0.1,False,2.5,medium,operational,haze,1,False,0.738608,0.676178,0.735992,0.489747,0.749655,0.981774,1.82
+SCN_007,rainy,night,medium,0.35,True,0.8,hard,adverse,rain+night+noise+camo,2,False,0.699681,0.613314,0.672822,0.425763,0.749655,0.897509,10.25
+SCN_008,snowy,day,high,0.42,True,1.5,hard,adverse,snow+noise+camo,2,False,0.745624,0.646444,0.713318,0.464405,0.749655,0.951528,4.85
+SCN_009,foggy,dusk,low,0.38,True,0.5,hard,adverse,fog+dusk+noise+camo,2,False,0.626495,0.489115,0.50958,0.304815,0.749655,0.679753,32.02
+SCN_010,hazy,night,medium,0.48,True,1.0,hard,adverse,haze+night+noise+camo,2,False,0.640892,0.513601,0.567319,0.347675,0.749655,0.756773,24.32
+SCN_011,snowy,night,high,0.65,True,0.3,extreme,critical,snow+night+noise+camo,3,True,0.720532,0.460266,0.524493,0.318673,0.749655,0.699646,30.04
+SCN_012,rainy,night,high,0.82,True,0.2,extreme,critical,rain+night+noise+camo,3,True,0.597945,0.439939,0.472793,0.273883,0.749655,0.630681,36.93

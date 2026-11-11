@@ -1,0 +1,44 @@
+[08:18:14][✅ OK  ] registered model=Model A (general but fragile) version=v20260416-0818 commit=d26cf0
+[08:18:14][ℹ INFO] weights=D:/park/test_framework/demo_model_A.pt
+[08:18:14][✅ OK  ] model artifact integrity check passed
+[08:18:14][✅ OK  ] runtime package manifest created [SIMULATED]
+[08:18:14][✅ OK  ] malware scan: passed
+[08:18:14][✅ OK  ] dependency audit: passed
+[08:18:14][✅ OK  ] artifact signing: passed
+[08:18:14][✅ OK  ] SBOM export: passed
+[08:18:14][ℹ INFO] policy=NIST fit-for-purpose + COCO metrics + corruption robustness demo gate
+[08:18:14][ℹ INFO] clean_map50=0.7345
+[08:18:14][ℹ INFO] mPC50=0.4600
+[08:18:14][ℹ INFO] rPC50=0.6262
+[08:18:14][ℹ INFO] adverse_map50=0.3127
+[08:18:14][ℹ INFO] critical_failure_count=1
+[08:18:14][ℹ INFO] ✅ g1_clean_map50: clean_map50 >= 0.7 (observed=0.7345)
+[08:18:14][ℹ INFO] ❌ g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.3127)
+[08:18:14][ℹ INFO] ❌ g3_rpc50: rpc50 >= 0.65 (observed=0.6262)
+[08:18:14][ℹ INFO] ❌ g4_critical_failure_count: critical_failure_count <= 0 (observed=1.0)
+[08:18:14][❌ FAIL] Model A (general but fragile) gate FAILED
+[08:18:14][❌ FAIL] automatic deployment blocked
+[08:18:14][⚠ WARN] feedback report attached for remediation
+[08:18:14][⚠ WARN] candidate returned to training or replacement queue
+[08:18:14][✅ OK  ] registered model=Model B (general and robust) version=v20260416-0818 commit=dbaba7
+[08:18:14][ℹ INFO] weights=D:/park/test_framework/demo_model_B.pt
+[08:18:14][✅ OK  ] model artifact integrity check passed
+[08:18:14][✅ OK  ] runtime package manifest created [SIMULATED]
+[08:18:14][✅ OK  ] malware scan: passed
+[08:18:14][✅ OK  ] dependency audit: passed
+[08:18:14][✅ OK  ] artifact signing: passed
+[08:18:14][✅ OK  ] SBOM export: passed
+[08:18:14][ℹ INFO] policy=NIST fit-for-purpose + COCO metrics + corruption robustness demo gate
+[08:18:14][ℹ INFO] clean_map50=0.7694
+[08:18:14][ℹ INFO] mPC50=0.6265
+[08:18:14][ℹ INFO] rPC50=0.8143
+[08:18:14][ℹ INFO] adverse_map50=0.5378
+[08:18:14][ℹ INFO] critical_failure_count=1
+[08:18:14][ℹ INFO] ✅ g1_clean_map50: clean_map50 >= 0.7 (observed=0.7694)
+[08:18:14][ℹ INFO] ✅ g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.5378)
+[08:18:14][ℹ INFO] ✅ g3_rpc50: rpc50 >= 0.65 (observed=0.8143)
+[08:18:14][ℹ INFO] ❌ g4_critical_failure_count: critical_failure_count <= 0 (observed=1.0)
+[08:18:14][❌ FAIL] Model B (general and robust) gate FAILED
+[08:18:14][❌ FAIL] automatic deployment blocked
+[08:18:14][⚠ WARN] feedback report attached for remediation
+[08:18:14][⚠ WARN] candidate returned to training or replacement queue

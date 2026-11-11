@@ -1,0 +1,9 @@
+path: .
+train: revision\data\Defense_AI_4cls\train\images
+val: D:\park\test5\revision\datasets\preset_seed4\SCN_007\images
+nc: 4
+names:
+  0: military_tank
+  1: military_truck
+  2: military_vehicle
+  3: soldier

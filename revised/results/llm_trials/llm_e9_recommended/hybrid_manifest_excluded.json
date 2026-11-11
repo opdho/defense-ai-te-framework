@@ -1,0 +1,36 @@
+{
+  "excluded": [
+    {
+      "weather": "snowy",
+      "time_of_day": "night",
+      "target_density": "high",
+      "sensor_noise_level": 0.65,
+      "adversarial_camouflage": true,
+      "visibility_km": 0.3,
+      "difficulty": "extreme",
+      "description": "Extreme blizzard at night with high sensor noise and active camouflage.",
+      "scenario_id": "SCN_011",
+      "bucket": "critical",
+      "severity": 3,
+      "corruption_family": "snow+night+noise+camo",
+      "safety_critical": true,
+      "source": "llm"
+    },
+    {
+      "weather": "rainy",
+      "time_of_day": "night",
+      "target_density": "high",
+      "sensor_noise_level": 0.82,
+      "adversarial_camouflage": true,
+      "visibility_km": 0.2,
+      "difficulty": "extreme",
+      "description": "Severe rain and night conditions with maximum noise and camouflage interference.",
+      "scenario_id": "SCN_012",
+      "bucket": "critical",
+      "severity": 3,
+      "corruption_family": "rain+night+noise+camo",
+      "safety_critical": true,
+      "source": "llm"
+    }
+  ]
+}

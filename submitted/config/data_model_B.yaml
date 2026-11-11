@@ -1,0 +1,10 @@
+train:
+- D:\park\guidbook\Defense_AI_Dataset\train\images
+- D:\park\test4\augmented_model_B\train\images
+val: D:\park\guidbook\Defense_AI_Dataset\val\images
+nc: 4
+names:
+- military_tank
+- military_truck
+- military_vehicle
+- soldier

@@ -1,0 +1,22 @@
+{
+  "description": "Mission-critical conditions that must be present in the evaluated manifest before G1-G4 verdicts may be used for deployment (G0).",
+  "required_bucket": "critical",
+  "conditions": [
+    {
+      "id": "MC1",
+      "weather": "foggy",
+      "time_of_day": "night",
+      "adversarial_camouflage": true,
+      "sensor_noise_level_min": 0.50,
+      "reference": "preset SCN_011"
+    },
+    {
+      "id": "MC2",
+      "weather": "rainy",
+      "time_of_day": "night",
+      "adversarial_camouflage": true,
+      "sensor_noise_level_min": 0.50,
+      "reference": "preset SCN_012"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+path: D:\park\test5\revision\data\Defense_AI_4cls
+train: train/images
+val: val/images
+test: test/images
+nc: 4
+names:
+  0: military_tank
+  1: military_truck
+  2: military_vehicle
+  3: soldier

@@ -1,0 +1,43 @@
+{
+  "policy_id": "nist_coco_robustness_demo_v1",
+  "display_name": "NIST fit-for-purpose + COCO metrics + corruption robustness demo gate",
+  "decision_note": "Metrics are grounded in NIST fit-for-purpose TEVV guidance and common object detection / corruption-robustness benchmarks. Numeric thresholds remain program-level acceptance criteria and should be tailored to the deployment context.",
+  "source_grounding": [
+    "NIST AI RMF / Playbook: fit-for-purpose TEVV, deployment-context evaluation, monitoring, acceptable limits",
+    "COCO-style object detection metrics: precision, recall, mAP50, mAP50-95",
+    "Corruption robustness literature: mean performance under corruption (mPC) and relative performance under corruption (rPC)"
+  ],
+  "derived_params": {
+    "critical_failure_floor_map50": 0.2
+  },
+  "gates": [
+    {
+      "id": "g1_clean_map50",
+      "metric": "clean_map50",
+      "operator": ">=",
+      "threshold": 0.7,
+      "description": "Clean reference performance must remain operationally credible on COCO-style AP50."
+    },
+    {
+      "id": "g2_adverse_map50",
+      "metric": "adverse_map50",
+      "operator": ">=",
+      "threshold": 0.5,
+      "description": "Performance under adverse/critical scenarios must remain above a minimum functional floor."
+    },
+    {
+      "id": "g3_rpc50",
+      "metric": "rpc50",
+      "operator": ">=",
+      "threshold": 0.65,
+      "description": "Relative performance under corruption should remain at or above 65% of clean-reference AP50."
+    },
+    {
+      "id": "g4_critical_failure_count",
+      "metric": "critical_failure_count",
+      "operator": "<=",
+      "threshold": 0,
+      "description": "No mission-critical scenario may fall below the critical failure floor."
+    }
+  ]
+}

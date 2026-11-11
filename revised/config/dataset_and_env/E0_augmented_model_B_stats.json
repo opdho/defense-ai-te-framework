@@ -1,0 +1,39 @@
+{
+ "images": 2340,
+ "labels": 2340,
+ "exts": {
+  ".jpg": 2340
+ },
+ "aug_type_counts": {},
+ "unique_source_stems_per_type": {},
+ "aug_source_split": {},
+ "non_aug_named_files": 2340,
+ "non_aug_in_raw_train": 0,
+ "non_aug_in_raw_val": 0,
+ "non_aug_in_raw_test": 0,
+ "non_aug_examples": [
+  "camouflage_soft_004035_0102",
+  "camouflage_soft_004133_0103",
+  "camouflage_soft_004146_0002",
+  "camouflage_soft_004242_0134",
+  "camouflage_soft_004249_0175",
+  "camouflage_soft_004251_0108",
+  "camouflage_soft_004300_0027",
+  "camouflage_soft_004312_0033",
+  "camouflage_soft_004405_0097",
+  "camouflage_soft_004648_0160"
+ ],
+ "label_class_ids": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "boxes_per_class": {
+  "0": 3500,
+  "1": 195,
+  "2": 407,
+  "3": 1347
+ },
+ "img_label_stem_mismatch": 0
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "model_id": "model_B",
+    "display_name": "Candidate B (YOLO11s, robust recipe)",
+    "version": "v20261029-1929",
+    "commit": "31a2cb",
+    "deployment_time": "2026-10-29T19:29:11.367232",
+    "judgment": "PASS",
+    "policy_id": "nist_coco_robustness_demo_v1",
+    "clean_map50": 0.7695,
+    "mpc50": 0.6738,
+    "rpc50": 0.8756,
+    "adverse_map50": 0.6146,
+    "status": "DEPLOYED"
+  },
+  {
+    "model_id": "model_C",
+    "display_name": "Candidate C (YOLO11n, robust recipe)",
+    "version": "v20261029-1929",
+    "commit": "bc912c",
+    "deployment_time": "2026-10-29T19:29:11.367232",
+    "judgment": "PASS",
+    "policy_id": "nist_coco_robustness_demo_v1",
+    "clean_map50": 0.7497,
+    "mpc50": 0.6418,
+    "rpc50": 0.8561,
+    "adverse_map50": 0.5767,
+    "status": "DEPLOYED"
+  }
+]

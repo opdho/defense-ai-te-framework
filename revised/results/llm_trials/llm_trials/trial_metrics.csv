@@ -1,0 +1,61 @@
+﻿setting,run,seed,api_ok,json_ok,n_items,item_violation_rate,run_violations,usable,latency_s,violations
+L1,0,1000,1,0,0,,exception:JSONDecodeError,0,98.71,
+L1,1,1001,1,0,0,,exception:JSONDecodeError,0,56.97,
+L1,2,1002,1,0,0,,exception:JSONDecodeError,0,84.94,
+L1,3,1003,1,0,0,,exception:JSONDecodeError,0,57.71,
+L1,4,1004,1,0,0,,exception:JSONDecodeError,0,42.0,
+L1,5,1005,1,0,0,,exception:JSONDecodeError,0,72.59,
+L1,6,1006,1,0,0,,exception:JSONDecodeError,0,80.3,
+L1,7,1007,1,0,0,,exception:JSONDecodeError,0,63.95,
+L1,8,1008,1,0,0,,exception:JSONDecodeError,0,54.39,
+L1,9,1009,1,0,0,,exception:JSONDecodeError,0,53.97,
+L1,10,1010,1,0,0,,exception:JSONDecodeError,0,70.37,
+L1,11,1011,1,0,0,,exception:JSONDecodeError,0,71.16,
+L1,12,1012,1,0,0,,exception:JSONDecodeError,0,77.5,
+L1,13,1013,1,0,0,,exception:JSONDecodeError,0,74.07,
+L1,14,1014,1,0,0,,exception:JSONDecodeError,0,58.32,
+L1,15,1015,1,0,0,,exception:JSONDecodeError,0,72.96,
+L1,16,1016,1,0,0,,exception:JSONDecodeError,0,52.42,
+L1,17,1017,1,0,0,,exception:JSONDecodeError,0,87.59,
+L1,18,1018,1,0,0,,exception:JSONDecodeError,0,60.88,
+L1,19,1019,1,0,0,,exception:JSONDecodeError,0,51.52,
+L1,20,1020,1,0,0,,exception:JSONDecodeError,0,56.74,
+L1,21,1021,1,0,0,,exception:JSONDecodeError,0,71.29,
+L1,22,1022,1,0,0,,exception:JSONDecodeError,0,71.67,
+L1,23,1023,1,0,0,,exception:JSONDecodeError,0,66.76,
+L1,24,1024,1,0,0,,exception:JSONDecodeError,0,49.41,
+L1,25,1025,1,0,0,,exception:JSONDecodeError,0,100.04,
+L1,26,1026,1,0,0,,exception:JSONDecodeError,0,71.71,
+L1,27,1027,1,0,0,,exception:JSONDecodeError,0,65.94,
+L1,28,1028,1,0,0,,exception:JSONDecodeError,0,62.52,
+L1,29,1029,1,0,0,,exception:JSONDecodeError,0,73.17,
+L1+L2,0,1000,1,1,12,0.1667,first_two_not_clean,0,10.65,"{""semantic"": 2}"
+L1+L2,1,1001,1,1,12,0.25,first_two_not_clean,0,10.81,"{""semantic"": 3}"
+L1+L2,2,1002,1,1,12,0.25,first_two_not_clean,0,10.13,"{""semantic"": 3}"
+L1+L2,3,1003,1,1,12,0.1667,,0,10.67,"{""semantic"": 2}"
+L1+L2,4,1004,1,1,12,0.25,first_two_not_clean,0,10.57,"{""semantic"": 3}"
+L1+L2,5,1005,1,1,12,0.25,first_two_not_clean,0,11.32,"{""semantic"": 3}"
+L1+L2,6,1006,1,1,12,0.1667,first_two_not_clean,0,10.58,"{""semantic"": 2}"
+L1+L2,7,1007,1,1,12,0.1667,first_two_not_clean,0,11.19,"{""semantic"": 2}"
+L1+L2,8,1008,1,1,12,0.1667,first_two_not_clean,0,10.6,"{""semantic"": 2}"
+L1+L2,9,1009,1,1,12,0.1667,first_two_not_clean,0,11.39,"{""semantic"": 2}"
+L1+L2,10,1010,1,1,12,0.25,first_two_not_clean,0,10.62,"{""semantic"": 3}"
+L1+L2,11,1011,1,1,12,0.25,first_two_not_clean,0,11.08,"{""semantic"": 3}"
+L1+L2,12,1012,1,1,12,0.1667,first_two_not_clean,0,11.49,"{""semantic"": 2}"
+L1+L2,13,1013,1,1,12,0.25,first_two_not_clean,0,10.73,"{""semantic"": 3}"
+L1+L2,14,1014,1,1,12,0.25,first_two_not_clean,0,9.73,"{""semantic"": 3}"
+L1+L2,15,1015,1,1,12,0.3333,first_two_not_clean,0,10.84,"{""semantic"": 4}"
+L1+L2,16,1016,1,1,12,0.25,first_two_not_clean,0,10.44,"{""semantic"": 3}"
+L1+L2,17,1017,1,1,12,0.25,first_two_not_clean,0,10.98,"{""semantic"": 3}"
+L1+L2,18,1018,1,1,12,0.25,first_two_not_clean,0,11.07,"{""semantic"": 3}"
+L1+L2,19,1019,1,1,12,0.1667,first_two_not_clean,0,10.78,"{""semantic"": 2}"
+L1+L2,20,1020,1,1,12,0.1667,first_two_not_clean,0,11.22,"{""semantic"": 2}"
+L1+L2,21,1021,1,1,12,0.25,first_two_not_clean,0,10.33,"{""semantic"": 3}"
+L1+L2,22,1022,1,1,12,0.1667,first_two_not_clean,0,11.12,"{""semantic"": 2}"
+L1+L2,23,1023,1,1,12,0.25,first_two_not_clean,0,10.5,"{""semantic"": 3}"
+L1+L2,24,1024,1,1,12,0.25,first_two_not_clean,0,11.64,"{""semantic"": 3}"
+L1+L2,25,1025,1,1,12,0.1667,first_two_not_clean,0,10.42,"{""semantic"": 2}"
+L1+L2,26,1026,1,1,12,0.1667,first_two_not_clean,0,11.47,"{""semantic"": 2}"
+L1+L2,27,1027,1,1,12,0.0833,first_two_not_clean,0,9.81,"{""semantic"": 1}"
+L1+L2,28,1028,1,1,12,0.1667,first_two_not_clean,0,10.38,"{""semantic"": 2}"
+L1+L2,29,1029,1,1,12,0.25,first_two_not_clean,0,10.79,"{""semantic"": 3}"

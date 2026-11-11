@@ -1,0 +1,88 @@
+[16:24:23][✅ OK  ] registered model=Candidate A (YOLO11n, base recipe) version=v20261029-1624 commit=29984a
+[16:24:23][ℹ INFO] weights=D:/park/test5/test_framework/demo_model_A.pt
+[16:24:23][✅ OK  ] model artifact integrity check passed
+[16:24:23][✅ OK  ] runtime package manifest created [SIMULATED]
+[16:24:23][✅ OK  ] malware scan: passed
+[16:24:23][✅ OK  ] dependency audit: passed
+[16:24:23][✅ OK  ] artifact signing: passed
+[16:24:23][✅ OK  ] SBOM export: passed
+[16:24:23][ℹ INFO] policy=NIST fit-for-purpose + COCO metrics + corruption robustness demo gate
+[16:24:23][ℹ INFO] clean_map50=0.7355
+[16:24:23][ℹ INFO] mPC50=0.4208
+[16:24:23][ℹ INFO] rPC50=0.5722
+[16:24:23][ℹ INFO] adverse_map50=0.2862
+[16:24:23][ℹ INFO] critical_failure_count=1
+[16:24:23][ℹ INFO] ✅ g1_clean_map50: clean_map50 >= 0.7 (observed=0.7355)
+[16:24:23][ℹ INFO] ❌ g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.2862)
+[16:24:23][ℹ INFO] ❌ g3_rpc50: rpc50 >= 0.65 (observed=0.5722)
+[16:24:23][ℹ INFO] ❌ g4_critical_failure_count: critical_failure_count <= 0 (observed=1.0)
+[16:24:23][❌ FAIL] Candidate A (YOLO11n, base recipe) gate FAILED
+[16:24:23][❌ FAIL] automatic deployment blocked
+[16:24:23][⚠ WARN] feedback report attached for remediation
+[16:24:23][⚠ WARN] candidate returned to training or replacement queue
+[16:24:23][✅ OK  ] registered model=Candidate B (YOLO11s, robust recipe) version=v20261029-1624 commit=0b2f0c
+[16:24:23][ℹ INFO] weights=D:/park/test5/test_framework/demo_model_B.pt
+[16:24:23][✅ OK  ] model artifact integrity check passed
+[16:24:23][✅ OK  ] runtime package manifest created [SIMULATED]
+[16:24:23][✅ OK  ] malware scan: passed
+[16:24:23][✅ OK  ] dependency audit: passed
+[16:24:23][✅ OK  ] artifact signing: passed
+[16:24:23][✅ OK  ] SBOM export: passed
+[16:24:23][ℹ INFO] policy=NIST fit-for-purpose + COCO metrics + corruption robustness demo gate
+[16:24:23][ℹ INFO] clean_map50=0.7695
+[16:24:23][ℹ INFO] mPC50=0.6009
+[16:24:23][ℹ INFO] rPC50=0.7809
+[16:24:23][ℹ INFO] adverse_map50=0.5077
+[16:24:23][ℹ INFO] critical_failure_count=1
+[16:24:23][ℹ INFO] ✅ g1_clean_map50: clean_map50 >= 0.7 (observed=0.7695)
+[16:24:23][ℹ INFO] ✅ g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.5077)
+[16:24:23][ℹ INFO] ✅ g3_rpc50: rpc50 >= 0.65 (observed=0.7809)
+[16:24:23][ℹ INFO] ❌ g4_critical_failure_count: critical_failure_count <= 0 (observed=1.0)
+[16:24:23][❌ FAIL] Candidate B (YOLO11s, robust recipe) gate FAILED
+[16:24:23][❌ FAIL] automatic deployment blocked
+[16:24:23][⚠ WARN] feedback report attached for remediation
+[16:24:23][⚠ WARN] candidate returned to training or replacement queue
+[16:24:23][✅ OK  ] registered model=Candidate C (YOLO11n, robust recipe) version=v20261029-1624 commit=a09d1c
+[16:24:23][ℹ INFO] weights=D:/park/test5/revision/weights/model_C_n_robust.pt
+[16:24:23][✅ OK  ] model artifact integrity check passed
+[16:24:23][✅ OK  ] runtime package manifest created [SIMULATED]
+[16:24:23][✅ OK  ] malware scan: passed
+[16:24:23][✅ OK  ] dependency audit: passed
+[16:24:23][✅ OK  ] artifact signing: passed
+[16:24:23][✅ OK  ] SBOM export: passed
+[16:24:23][ℹ INFO] policy=NIST fit-for-purpose + COCO metrics + corruption robustness demo gate
+[16:24:23][ℹ INFO] clean_map50=0.7497
+[16:24:23][ℹ INFO] mPC50=0.5660
+[16:24:23][ℹ INFO] rPC50=0.7550
+[16:24:23][ℹ INFO] adverse_map50=0.4684
+[16:24:23][ℹ INFO] critical_failure_count=1
+[16:24:23][ℹ INFO] ✅ g1_clean_map50: clean_map50 >= 0.7 (observed=0.7497)
+[16:24:23][ℹ INFO] ❌ g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.4684)
+[16:24:23][ℹ INFO] ✅ g3_rpc50: rpc50 >= 0.65 (observed=0.755)
+[16:24:23][ℹ INFO] ❌ g4_critical_failure_count: critical_failure_count <= 0 (observed=1.0)
+[16:24:23][❌ FAIL] Candidate C (YOLO11n, robust recipe) gate FAILED
+[16:24:23][❌ FAIL] automatic deployment blocked
+[16:24:23][⚠ WARN] feedback report attached for remediation
+[16:24:23][⚠ WARN] candidate returned to training or replacement queue
+[16:24:23][✅ OK  ] registered model=Candidate D (YOLO11s, base recipe) version=v20261029-1624 commit=563699
+[16:24:23][ℹ INFO] weights=D:/park/test5/revision/weights/model_D_s_base.pt
+[16:24:23][✅ OK  ] model artifact integrity check passed
+[16:24:23][✅ OK  ] runtime package manifest created [SIMULATED]
+[16:24:23][✅ OK  ] malware scan: passed
+[16:24:23][✅ OK  ] dependency audit: passed
+[16:24:23][✅ OK  ] artifact signing: passed
+[16:24:23][✅ OK  ] SBOM export: passed
+[16:24:23][ℹ INFO] policy=NIST fit-for-purpose + COCO metrics + corruption robustness demo gate
+[16:24:23][ℹ INFO] clean_map50=0.7650
+[16:24:23][ℹ INFO] mPC50=0.4596
+[16:24:23][ℹ INFO] rPC50=0.6008
+[16:24:23][ℹ INFO] adverse_map50=0.3249
+[16:24:23][ℹ INFO] critical_failure_count=1
+[16:24:23][ℹ INFO] ✅ g1_clean_map50: clean_map50 >= 0.7 (observed=0.765)
+[16:24:23][ℹ INFO] ❌ g2_adverse_map50: adverse_map50 >= 0.5 (observed=0.3249)
+[16:24:23][ℹ INFO] ❌ g3_rpc50: rpc50 >= 0.65 (observed=0.6008)
+[16:24:23][ℹ INFO] ❌ g4_critical_failure_count: critical_failure_count <= 0 (observed=1.0)
+[16:24:23][❌ FAIL] Candidate D (YOLO11s, base recipe) gate FAILED
+[16:24:23][❌ FAIL] automatic deployment blocked
+[16:24:23][⚠ WARN] feedback report attached for remediation
+[16:24:23][⚠ WARN] candidate returned to training or replacement queue

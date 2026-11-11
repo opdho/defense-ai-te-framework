@@ -1,0 +1,29 @@
+{
+  "g0_coverage": [
+    {
+      "id": "MC1",
+      "satisfied": true,
+      "matched_scenarios": [
+        "SCN_011"
+      ]
+    },
+    {
+      "id": "MC2",
+      "satisfied": true,
+      "matched_scenarios": [
+        "SCN_012"
+      ]
+    }
+  ],
+  "g0_missing": [],
+  "verdicts": {
+    "model_A": "FAIL (g2_adverse_map50)",
+    "model_B": "PASS",
+    "model_C": "PASS",
+    "model_D": "FAIL (g2_adverse_map50)"
+  },
+  "deployed": [
+    "model_B",
+    "model_C"
+  ]
+}

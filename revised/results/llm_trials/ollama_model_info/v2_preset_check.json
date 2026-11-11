@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "scenario_id": "SCN_001",
+      "difficulty": "easy",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_002",
+      "difficulty": "easy",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_003",
+      "difficulty": "medium",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_004",
+      "difficulty": "medium",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_005",
+      "difficulty": "medium",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_006",
+      "difficulty": "medium",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_007",
+      "difficulty": "hard",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_008",
+      "difficulty": "hard",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_009",
+      "difficulty": "hard",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_010",
+      "difficulty": "hard",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_011",
+      "difficulty": "extreme",
+      "violations": []
+    },
+    {
+      "scenario_id": "SCN_012",
+      "difficulty": "extreme",
+      "violations": []
+    }
+  ],
+  "run_level_SCN003_012": [],
+  "all_pass": true
+}

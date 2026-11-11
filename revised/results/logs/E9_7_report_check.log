@@ -1,0 +1,6 @@
+model_A: decimals in report=10, not traceable to summary=0 []
+model_B: decimals in report=10, not traceable to summary=1 [85.88]
+model_A_rep: decimals in report=9, not traceable to summary=1 [99.46]
+model_B_rep: decimals in report=7, not traceable to summary=1 [84.5]
+model_C_clean: decimals in report=9, not traceable to summary=1 [87.16]
+model_D: decimals in report=11, not traceable to summary=0 []

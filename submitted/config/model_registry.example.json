@@ -1,0 +1,23 @@
+{
+  "registry_name": "framework_usecase_demo",
+  "class_names": [
+    "military_tank",
+    "military_truck",
+    "military_vehicle",
+    "soldier"
+  ],
+  "models": [
+    {
+      "model_id": "model_A",
+      "display_name": "Model A (general but fragile)",
+      "weights": "D:/park/test_framework/demo_model_A.pt",
+      "notes": "Candidate model expected to perform adequately on clean reference scenarios but degrade under corruption scenarios."
+    },
+    {
+      "model_id": "model_B",
+      "display_name": "Model B (general and robust)",
+      "weights": "D:/park/test_framework/demo_model_B.pt",
+      "notes": "Candidate model expected to maintain stronger performance under corruption scenarios."
+    }
+  ]
+}

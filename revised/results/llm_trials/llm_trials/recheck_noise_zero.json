@@ -1,0 +1,34 @@
+{
+  "L1": {
+    "original_rule": {
+      "json_parsed_runs": 0,
+      "mean_item_violation_rate": null,
+      "usable_runs": 0,
+      "violation_counts": {}
+    },
+    "fixed_rule": {
+      "json_parsed_runs": 0,
+      "mean_item_violation_rate": null,
+      "usable_runs": 0,
+      "violation_counts": {}
+    }
+  },
+  "L1+L2": {
+    "original_rule": {
+      "json_parsed_runs": 30,
+      "mean_item_violation_rate": 0.2111,
+      "usable_runs": 0,
+      "violation_counts": {
+        "semantic": 76
+      }
+    },
+    "fixed_rule": {
+      "json_parsed_runs": 30,
+      "mean_item_violation_rate": 0.2083,
+      "usable_runs": 0,
+      "violation_counts": {
+        "semantic": 75
+      }
+    }
+  }
+}

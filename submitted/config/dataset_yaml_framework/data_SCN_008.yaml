@@ -1,0 +1,9 @@
+path: .
+train: D:\park\guidbook\Defense_AI_Dataset\train\images
+val: D:\park\test5\dataset\ms_eval_framework\SCN_008\images
+nc: 4
+names:
+  0: military_tank
+  1: military_truck
+  2: military_vehicle
+  3: soldier

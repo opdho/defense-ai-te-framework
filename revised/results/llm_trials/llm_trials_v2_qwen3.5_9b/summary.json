@@ -1,0 +1,40 @@
+{
+  "model": "qwen3.5:9b",
+  "runs": 30,
+  "llm_scenarios_per_run": 10,
+  "target_mix": {
+    "medium": 4,
+    "hard": 4,
+    "extreme": 2
+  },
+  "max_retries": 3,
+  "temperature": 0.7,
+  "seed_rule": "seed0 + run*10 + attempt",
+  "first_attempt_pass_rate": 0.1333,
+  "cumulative_pass_rate_by_attempt": {
+    "1": 0.1333,
+    "2": 0.2333,
+    "3": 0.3,
+    "4": 0.4
+  },
+  "final_fallback_rate": 0.6,
+  "mean_attempts_per_run": 3.3333,
+  "mean_generation_time_per_run_s": 41.62,
+  "mean_latency_per_attempt_s": 12.49,
+  "n_attempts": 100,
+  "attempt_api_success_rate": 1.0,
+  "attempt_json_parse_rate": 1.0,
+  "item_violation_counts_all_attempts": {
+    "semantic:hard_noise_not_0.30_0.50": 28,
+    "semantic:medium_noise_gt_0.30": 23,
+    "semantic:extreme_not_night": 21,
+    "semantic:extreme_clear_weather": 5,
+    "semantic:medium_camo": 4,
+    "forbidden_term": 1
+  },
+  "run_violation_counts_all_attempts": {
+    "run:difficulty_mix": 69,
+    "run:count": 2
+  },
+  "best_manifest_run": 0
+}

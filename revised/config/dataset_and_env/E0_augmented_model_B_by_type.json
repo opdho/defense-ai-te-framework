@@ -1,0 +1,110 @@
+{
+ "total": 2340,
+ "type_counts": {
+  "camouflage_soft": 180,
+  "fog_dense": 180,
+  "fog_rain_camo": 180,
+  "fog_soft": 180,
+  "haze_dust": 180,
+  "night_deep": 180,
+  "night_fog": 180,
+  "night_rain": 180,
+  "night_soft": 180,
+  "noise_high": 180,
+  "noise_mid": 180,
+  "rain_heavy": 180,
+  "rain_soft": 180
+ },
+ "max_idx_per_type": {
+  "camouflage_soft": 179,
+  "fog_dense": 179,
+  "fog_rain_camo": 179,
+  "fog_soft": 179,
+  "haze_dust": 179,
+  "night_deep": 179,
+  "night_fog": 179,
+  "night_rain": 179,
+  "night_soft": 179,
+  "noise_high": 179,
+  "noise_mid": 179,
+  "rain_heavy": 179,
+  "rain_soft": 179
+ },
+ "unique_sources_per_type": {
+  "camouflage_soft": 180,
+  "fog_dense": 180,
+  "fog_rain_camo": 180,
+  "fog_soft": 180,
+  "haze_dust": 180,
+  "night_deep": 180,
+  "night_fog": 180,
+  "night_rain": 180,
+  "night_soft": 180,
+  "noise_high": 180,
+  "noise_mid": 180,
+  "rain_heavy": 180,
+  "rain_soft": 180
+ },
+ "duplicate_source_within_type": {
+  "camouflage_soft": 0,
+  "fog_dense": 0,
+  "fog_rain_camo": 0,
+  "fog_soft": 0,
+  "haze_dust": 0,
+  "night_deep": 0,
+  "night_fog": 0,
+  "night_rain": 0,
+  "night_soft": 0,
+  "noise_high": 0,
+  "noise_mid": 0,
+  "rain_heavy": 0,
+  "rain_soft": 0
+ },
+ "unique_sources_all": 2121,
+ "source_split_per_type": {
+  "camouflage_soft": {
+   "train": 180
+  },
+  "fog_dense": {
+   "train": 180
+  },
+  "fog_rain_camo": {
+   "train": 180
+  },
+  "fog_soft": {
+   "train": 180
+  },
+  "haze_dust": {
+   "train": 180
+  },
+  "night_deep": {
+   "train": 180
+  },
+  "night_fog": {
+   "train": 180
+  },
+  "night_rain": {
+   "train": 180
+  },
+  "night_soft": {
+   "train": 180
+  },
+  "noise_high": {
+   "train": 180
+  },
+  "noise_mid": {
+   "train": 180
+  },
+  "rain_heavy": {
+   "train": 180
+  },
+  "rain_soft": {
+   "train": 180
+  }
+ },
+ "unmatched": 0,
+ "unmatched_examples": [],
+ "label_equals_remapped_raw_source": 2340,
+ "label_differs": 0,
+ "label_differs_examples": []
+}

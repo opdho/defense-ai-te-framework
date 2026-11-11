@@ -1,0 +1,32 @@
+{
+  "registry_name": "revision_retrain_A_rep_C_clean_B_rep",
+  "class_names": [
+    "military_tank",
+    "military_truck",
+    "military_vehicle",
+    "soldier"
+  ],
+  "models": [
+    {
+      "model_id": "model_A_rep",
+      "display_name": "Candidate A_rep (YOLO11n, base recipe, retrained)",
+      "weights": "D:/park/test5/revision/weights/model_A_rep.pt",
+      "md5": "b65cf26dede874923d4d7db69193706c",
+      "notes": "Revision retrain (this laptop, 2026-10-29). Same as A: yolo11n.pt, 4-class train only, 01 script (epochs 45, weak augmentation), seed 42; --workers 4."
+    },
+    {
+      "model_id": "model_C_clean",
+      "display_name": "Candidate C_clean (YOLO11n, robust recipe, retrained)",
+      "weights": "D:/park/test5/revision/weights/model_C_clean.pt",
+      "md5": "f1305e617cfbc4e5cb9005d77963f23b",
+      "notes": "Revision retrain (this laptop, 2026-10-29). Same as C but one uninterrupted run: yolo11n.pt, 4-class train + augmented_model_B, 02 script (epochs 70, strong augmentation), seed 42; --workers 4."
+    },
+    {
+      "model_id": "model_B_rep",
+      "display_name": "Candidate B_rep (YOLO11s, robust recipe, retrained)",
+      "weights": "D:/park/test5/revision/weights/model_B_rep.pt",
+      "md5": "fa477193e190341548707f1faafdb2be",
+      "notes": "Revision retrain (this laptop, 2026-10-29). Same as B: yolo11s.pt, 4-class train + augmented_model_B, 02 script (epochs 70, strong augmentation), seed 42; --workers 4."
+    }
+  ]
+}

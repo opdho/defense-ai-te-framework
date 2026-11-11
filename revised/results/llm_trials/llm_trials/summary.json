@@ -1,0 +1,34 @@
+{
+  "model": "qwen3:4b",
+  "runs_per_setting": 30,
+  "num_scenarios": 12,
+  "settings": {
+    "L1": {
+      "api_success_rate": 1.0,
+      "json_parse_rate": 0.0,
+      "mean_item_violation_rate": null,
+      "usable_run_rate": 0.0,
+      "violation_counts": {},
+      "run_violation_counts": {
+        "exception:JSONDecodeError": 30
+      }
+    },
+    "L1+L2": {
+      "api_success_rate": 1.0,
+      "json_parse_rate": 1.0,
+      "mean_item_violation_rate": 0.2111,
+      "usable_run_rate": 0.0,
+      "violation_counts": {
+        "semantic": 76
+      },
+      "run_violation_counts": {
+        "first_two_not_clean": 29
+      }
+    },
+    "L1+L2+L3": {
+      "final_valid_rate": 1.0,
+      "fallback_rate": 1.0,
+      "note": "runs failing validation are replaced by the preset set, so every run ends with a valid manifest"
+    }
+  }
+}
