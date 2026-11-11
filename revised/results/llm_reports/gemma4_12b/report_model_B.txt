@@ -1,0 +1,28 @@
+**[평가 보고서: 자동화 시나리오 기반 성능 평가]**
+
+**1. 개요**
+본 보고서는 Candidate B (YOLO11s, robust recipe) 모델에 대한 NIST 및 COCO 기반 강건성 평가 결과를 요약합니다. 본 평가는 실제 운영 환경의 적대적 시나리오 및 환경 변수 변화에 대한 모델의 신뢰성을 검증하는 데 목적이 있습니다.
+
+**2. 평가 결과 요약**
+*   **모델 식별자:** Model B (Candidate B)
+*   **적용 정책:** NIST fit-for-purpose + COCO metrics + corruption robustness demo gate
+*   **최종 판정:** **FAIL (배포 불가)**
+
+**3. 세부 지표 분석**
+모델은 주요 성능 지표 중 3개 항목을 통과하였으나, 임무 핵심 안전 지표에서 부적합 판정을 받았습니다.
+
+| 평가 항목 | 지표 (Metric) | 기준치 (Threshold) | 측정값 (Value) | 결과 |
+| :--- | :--- | :--- | :--- | :--- |
+| **G1. 기본 성능** | Clean mAP50 | $\ge 0.7$ | 0.7694 | **Pass** |
+| **G2. 적대적 환경** | Adverse mAP50 | $\ge 0.5$ | 0.5378 | **Pass** |
+| **G3. 강건성 비율** | RPC50 | $\ge 0.65$ | 0.8143 | **Pass** |
+| **G4. 핵심 실패** | Critical Failure Count | $\le 0$ | **1.0** | **Fail** |
+
+**4. 주요 결함 분석 (Worst Case)**
+평가 결과, 특정 임무 핵심(Critical) 시나리오에서 성능 저하가 발생하였습니다.
+*   **최악 사례 (SCN_011):** 안개(Foggy), 야간(Night), 적대적 위장(Adversarial Camouflage)이 결합된 환경에서 mAP50이 **0.1156**으로 급감하였으며, 이는 Clean 기준 대비 **84.98%의 성능 하락**을 의미합니다.
+*   **결론:** 해당 시나리오가 '안전 핵심(Safety Critical)'으로 분류됨에 따라, 허용 가능한 임계치(Critical Failure Floor)를 초과하여 배포 게이트를 통과하지 못했습니다.
+
+**5. CI/CD 게이트 결정**
+*   **Deployable:** **False**
+*   **조치 사항:** 모델의 강건성(Robustness) 개선을 위한 재학습 또는 특정 환경(안개, 야간, 위장 결합 시나리오)에 대한 데이터 증강(Data Augmentation) 전략 보강이 필요함.

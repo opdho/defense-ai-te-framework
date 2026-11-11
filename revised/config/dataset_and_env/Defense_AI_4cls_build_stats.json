@@ -1,0 +1,68 @@
+{
+  "source": "<DATASET>",
+  "class_map_original_to_new": {
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "6": 3
+  },
+  "splits": {
+    "train": {
+      "source_images": 21978,
+      "images": 11610,
+      "skipped_no_label_file": 0,
+      "skipped_no_target_box": 10368,
+      "boxes_per_class": {
+        "military_tank": 17454,
+        "military_truck": 1245,
+        "military_vehicle": 1963,
+        "soldier": 6502
+      },
+      "images_per_class": {
+        "military_tank": 8682,
+        "military_truck": 553,
+        "military_vehicle": 898,
+        "soldier": 2695
+      },
+      "total_boxes": 27164
+    },
+    "val": {
+      "source_images": 2941,
+      "images": 1478,
+      "skipped_no_label_file": 0,
+      "skipped_no_target_box": 1463,
+      "boxes_per_class": {
+        "military_tank": 1787,
+        "military_truck": 148,
+        "military_vehicle": 307,
+        "soldier": 745
+      },
+      "images_per_class": {
+        "military_tank": 938,
+        "military_truck": 84,
+        "military_vehicle": 149,
+        "soldier": 420
+      },
+      "total_boxes": 2987
+    },
+    "test": {
+      "source_images": 1396,
+      "images": 803,
+      "skipped_no_label_file": 0,
+      "skipped_no_target_box": 593,
+      "boxes_per_class": {
+        "military_tank": 818,
+        "military_truck": 96,
+        "military_vehicle": 194,
+        "soldier": 560
+      },
+      "images_per_class": {
+        "military_tank": 423,
+        "military_truck": 45,
+        "military_vehicle": 119,
+        "soldier": 283
+      },
+      "total_boxes": 1668
+    }
+  }
+}

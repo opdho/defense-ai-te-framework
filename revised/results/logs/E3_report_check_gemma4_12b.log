@@ -1,0 +1,2 @@
+model_A: decimals in report=12, not traceable to summary=1 [99.55]
+model_B: decimals in report=9, not traceable to summary=1 [84.98]

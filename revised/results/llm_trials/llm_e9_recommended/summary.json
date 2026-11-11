@@ -1,0 +1,30 @@
+{
+  "model": "gemma4:12b",
+  "runs": 1,
+  "llm_scenarios_per_run": 10,
+  "target_mix": {
+    "medium": 4,
+    "hard": 4,
+    "extreme": 2
+  },
+  "max_retries": 3,
+  "temperature": 0.7,
+  "seed_rule": "seed0 + run*10 + attempt",
+  "first_attempt_pass_rate": 1.0,
+  "cumulative_pass_rate_by_attempt": {
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0
+  },
+  "final_fallback_rate": 0.0,
+  "mean_attempts_per_run": 1.0,
+  "mean_generation_time_per_run_s": 21.3,
+  "mean_latency_per_attempt_s": 21.3,
+  "n_attempts": 1,
+  "attempt_api_success_rate": 1.0,
+  "attempt_json_parse_rate": 1.0,
+  "item_violation_counts_all_attempts": {},
+  "run_violation_counts_all_attempts": {},
+  "best_manifest_run": 0
+}

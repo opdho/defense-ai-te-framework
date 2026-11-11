@@ -1,0 +1,188 @@
+{
+  "policy": {
+    "policy_id": "nist_coco_robustness_demo_v1",
+    "display_name": "NIST fit-for-purpose + COCO metrics + corruption robustness demo gate"
+  },
+  "models": {
+    "model_A_rep": {
+      "policy_id": "nist_coco_robustness_demo_v1",
+      "policy_name": "NIST fit-for-purpose + COCO metrics + corruption robustness demo gate",
+      "overall_judgment": "FAIL",
+      "cicd_deployable": false,
+      "criteria": {
+        "g1_clean_map50": {
+          "metric": "clean_map50",
+          "description": "Clean reference performance must remain operationally credible on COCO-style AP50.",
+          "value": 0.7279,
+          "operator": ">=",
+          "threshold": 0.7,
+          "pass": true
+        },
+        "g2_adverse_map50": {
+          "metric": "adverse_map50",
+          "description": "Performance under adverse/critical scenarios must remain above a minimum functional floor.",
+          "value": 0.3054,
+          "operator": ">=",
+          "threshold": 0.5,
+          "pass": false
+        },
+        "g3_rpc50": {
+          "metric": "rpc50",
+          "description": "Relative performance under corruption should remain at or above 65% of clean-reference AP50.",
+          "value": 0.617,
+          "operator": ">=",
+          "threshold": 0.65,
+          "pass": false
+        },
+        "g4_critical_failure_count": {
+          "metric": "critical_failure_count",
+          "description": "No mission-critical scenario may fall below the critical failure floor.",
+          "value": 1.0,
+          "operator": "<=",
+          "threshold": 0,
+          "pass": false
+        }
+      },
+      "clean_map50": 0.7279,
+      "clean_map50_95": 0.4826,
+      "clean_precision": 0.7529,
+      "clean_recall": 0.6754,
+      "mpc50": 0.4492,
+      "rpc50": 0.617,
+      "adverse_map50": 0.3054,
+      "adverse_rpc50": 0.4196,
+      "worstcase_map50": 0.005,
+      "critical_failure_count": 1,
+      "num_scenarios": 12,
+      "num_clean_reference": 2,
+      "num_corrupted": 10,
+      "num_critical": 2,
+      "critical_failure_floor_map50": 0.2,
+      "model_id": "model_A_rep",
+      "display_name": "Candidate A_rep (YOLO11n, base recipe, retrained)",
+      "weights": "<PROJECT>\\revision\\weights\\model_A_rep.pt",
+      "notes": "Revision retrain (the experiment machine, 2026-10-29). Same as A: yolo11n.pt, 4-class train only, 01 script (epochs 45, weak augmentation), seed 42; --workers 4.",
+      "results_csv": "revision\\eval\\2x2_retrain\\eval_results_model_A_rep.csv"
+    },
+    "model_C_clean": {
+      "policy_id": "nist_coco_robustness_demo_v1",
+      "policy_name": "NIST fit-for-purpose + COCO metrics + corruption robustness demo gate",
+      "overall_judgment": "FAIL",
+      "cicd_deployable": false,
+      "criteria": {
+        "g1_clean_map50": {
+          "metric": "clean_map50",
+          "description": "Clean reference performance must remain operationally credible on COCO-style AP50.",
+          "value": 0.7467,
+          "operator": ">=",
+          "threshold": 0.7,
+          "pass": true
+        },
+        "g2_adverse_map50": {
+          "metric": "adverse_map50",
+          "description": "Performance under adverse/critical scenarios must remain above a minimum functional floor.",
+          "value": 0.5011,
+          "operator": ">=",
+          "threshold": 0.5,
+          "pass": true
+        },
+        "g3_rpc50": {
+          "metric": "rpc50",
+          "description": "Relative performance under corruption should remain at or above 65% of clean-reference AP50.",
+          "value": 0.7934,
+          "operator": ">=",
+          "threshold": 0.65,
+          "pass": true
+        },
+        "g4_critical_failure_count": {
+          "metric": "critical_failure_count",
+          "description": "No mission-critical scenario may fall below the critical failure floor.",
+          "value": 1.0,
+          "operator": "<=",
+          "threshold": 0,
+          "pass": false
+        }
+      },
+      "clean_map50": 0.7467,
+      "clean_map50_95": 0.5012,
+      "clean_precision": 0.7415,
+      "clean_recall": 0.6927,
+      "mpc50": 0.5924,
+      "rpc50": 0.7934,
+      "adverse_map50": 0.5011,
+      "adverse_rpc50": 0.6711,
+      "worstcase_map50": 0.1057,
+      "critical_failure_count": 1,
+      "num_scenarios": 12,
+      "num_clean_reference": 2,
+      "num_corrupted": 10,
+      "num_critical": 2,
+      "critical_failure_floor_map50": 0.2,
+      "model_id": "model_C_clean",
+      "display_name": "Candidate C_clean (YOLO11n, robust recipe, retrained)",
+      "weights": "<PROJECT>\\revision\\weights\\model_C_clean.pt",
+      "notes": "Revision retrain (the experiment machine, 2026-10-29). Same as C but one uninterrupted run: yolo11n.pt, 4-class train + augmented_model_B, 02 script (epochs 70, strong augmentation), seed 42; --workers 4.",
+      "results_csv": "revision\\eval\\2x2_retrain\\eval_results_model_C_clean.csv"
+    },
+    "model_B_rep": {
+      "policy_id": "nist_coco_robustness_demo_v1",
+      "policy_name": "NIST fit-for-purpose + COCO metrics + corruption robustness demo gate",
+      "overall_judgment": "FAIL",
+      "cicd_deployable": false,
+      "criteria": {
+        "g1_clean_map50": {
+          "metric": "clean_map50",
+          "description": "Clean reference performance must remain operationally credible on COCO-style AP50.",
+          "value": 0.7632,
+          "operator": ">=",
+          "threshold": 0.7,
+          "pass": true
+        },
+        "g2_adverse_map50": {
+          "metric": "adverse_map50",
+          "description": "Performance under adverse/critical scenarios must remain above a minimum functional floor.",
+          "value": 0.5495,
+          "operator": ">=",
+          "threshold": 0.5,
+          "pass": true
+        },
+        "g3_rpc50": {
+          "metric": "rpc50",
+          "description": "Relative performance under corruption should remain at or above 65% of clean-reference AP50.",
+          "value": 0.8278,
+          "operator": ">=",
+          "threshold": 0.65,
+          "pass": true
+        },
+        "g4_critical_failure_count": {
+          "metric": "critical_failure_count",
+          "description": "No mission-critical scenario may fall below the critical failure floor.",
+          "value": 1.0,
+          "operator": "<=",
+          "threshold": 0,
+          "pass": false
+        }
+      },
+      "clean_map50": 0.7632,
+      "clean_map50_95": 0.522,
+      "clean_precision": 0.8068,
+      "clean_recall": 0.6897,
+      "mpc50": 0.6317,
+      "rpc50": 0.8278,
+      "adverse_map50": 0.5495,
+      "adverse_rpc50": 0.72,
+      "worstcase_map50": 0.1262,
+      "critical_failure_count": 1,
+      "num_scenarios": 12,
+      "num_clean_reference": 2,
+      "num_corrupted": 10,
+      "num_critical": 2,
+      "critical_failure_floor_map50": 0.2,
+      "model_id": "model_B_rep",
+      "display_name": "Candidate B_rep (YOLO11s, robust recipe, retrained)",
+      "weights": "<PROJECT>\\revision\\weights\\model_B_rep.pt",
+      "notes": "Revision retrain (the experiment machine, 2026-10-29). Same as B: yolo11s.pt, 4-class train + augmented_model_B, 02 script (epochs 70, strong augmentation), seed 42; --workers 4.",
+      "results_csv": "revision\\eval\\2x2_retrain\\eval_results_model_B_rep.csv"
+    }
+  }
+}

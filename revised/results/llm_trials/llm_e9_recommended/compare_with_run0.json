@@ -1,0 +1,14 @@
+{
+  "old_attempts": 1,
+  "new_attempts": 1,
+  "new_pass_attempt": 1,
+  "seeds_old": [
+    2001
+  ],
+  "seeds_new": [
+    2001
+  ],
+  "raw_identical_attempt1": true,
+  "manifest_identical": true,
+  "fields_differing": []
+}

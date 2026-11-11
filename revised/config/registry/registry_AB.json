@@ -1,0 +1,25 @@
+{
+  "registry_name": "revision_candidates_AB",
+  "class_names": [
+    "military_tank",
+    "military_truck",
+    "military_vehicle",
+    "soldier"
+  ],
+  "models": [
+    {
+      "model_id": "model_A",
+      "display_name": "Candidate A (YOLO11n, base recipe)",
+      "weights": "<PROJECT>/test_framework/demo_model_A.pt",
+      "md5": "b7950fc30aeb4ad6c09518cc6086abfc",
+      "notes": "Same weights as submission model_A (run model_A_fast2). yolo11n.pt, 4-class train only, epochs 45, weak augmentation, seed 42."
+    },
+    {
+      "model_id": "model_B",
+      "display_name": "Candidate B (YOLO11s, robust recipe)",
+      "weights": "<PROJECT>/test_framework/demo_model_B.pt",
+      "md5": "cf08599064851773e821d67abaaf56b4",
+      "notes": "Same weights as submission model_B (run model_B_fast). yolo11s.pt, 4-class train + augmented_model_B (2,340 images), epochs 70, strong augmentation, seed 42."
+    }
+  ]
+}

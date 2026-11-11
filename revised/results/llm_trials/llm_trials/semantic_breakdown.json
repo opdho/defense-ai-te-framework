@@ -1,0 +1,1383 @@
+{
+  "total_flagged_easy_items": 76,
+  "flagged_only_by_noise_zero_bug": 1,
+  "by_combination": {
+    "noise>0.10": 26,
+    "weather=snowy + noise>0.10": 5,
+    "time=night": 4,
+    "weather=hazy + noise>0.10": 4,
+    "weather=snowy + time=dusk + noise>0.10": 3,
+    "weather=hazy + time=dusk + noise>0.10": 3,
+    "weather=foggy + noise>0.10": 3,
+    "time=night + noise>0.10": 3,
+    "weather=rainy": 3,
+    "time=dusk + noise>0.10": 2,
+    "weather=hazy": 2,
+    "weather=rainy + noise>0.10": 2,
+    "weather=snowy + time=night + noise>0.10": 2,
+    "weather=rainy + time=night + noise>0.10": 2,
+    "weather=hazy + time=night + noise>0.10": 2,
+    "weather=snowy": 2,
+    "noise==0.0 (validator bug)": 1,
+    "weather=rainy + time=dusk + noise>0.10": 1,
+    "time=dusk": 1,
+    "weather=hazy + time=night": 1,
+    "weather=snowy + time=night": 1,
+    "weather=rainy + camouflage + noise>0.10": 1,
+    "weather=foggy + camouflage": 1,
+    "weather=hazy + camouflage + noise>0.10": 1
+  },
+  "by_condition_any": {
+    "noise>0.10": 60,
+    "weather": 39,
+    "time": 25,
+    "camouflage": 3,
+    "noise": 1
+  },
+  "examples": [
+    {
+      "run": 0,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime with low target density and minimal sensor noise for baseline detection performance."
+      }
+    },
+    {
+      "run": 0,
+      "item": 7,
+      "causes": [
+        "time=night"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 10.0,
+        "difficulty": "easy",
+        "description": "Clear night with low target density and minimal sensor noise for baseline detection performance."
+      }
+    },
+    {
+      "run": 1,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.2,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density and minimal sensor noise for baseline object detection."
+      }
+    },
+    {
+      "run": 1,
+      "item": 5,
+      "causes": [
+        "weather=snowy",
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "dusk",
+        "target_density": "low",
+        "sensor_noise_level": 0.25,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.7,
+        "difficulty": "easy",
+        "description": "Snowy dusk conditions with low target density and low sensor noise for simple detection scenarios."
+      }
+    },
+    {
+      "run": 1,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "day",
+        "target_density": "medium",
+        "sensor_noise_level": 0.45,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.2,
+        "difficulty": "easy",
+        "description": "Hazy daytime with moderate target density and medium sensor noise for basic detection scenarios."
+      }
+    },
+    {
+      "run": 2,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime with low target density and minimal sensor noise"
+      }
+    },
+    {
+      "run": 2,
+      "item": 6,
+      "causes": [
+        "weather=hazy",
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "dusk",
+        "target_density": "medium",
+        "sensor_noise_level": 0.25,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.7,
+        "difficulty": "easy",
+        "description": "Hazy dusk with medium target density and low sensor noise"
+      }
+    },
+    {
+      "run": 2,
+      "item": 7,
+      "causes": [
+        "time=night"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.05,
+        "adversarial_camouflage": false,
+        "visibility_km": 9.3,
+        "difficulty": "easy",
+        "description": "Clear night with low target density and minimal sensor noise"
+      }
+    },
+    {
+      "run": 3,
+      "item": 2,
+      "causes": [
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "dusk",
+        "target_density": "low",
+        "sensor_noise_level": 0.3,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.8,
+        "difficulty": "easy",
+        "description": "Clear dusk with low target density and moderate sensor noise, testing edge case detection."
+      }
+    },
+    {
+      "run": 3,
+      "item": 12,
+      "causes": [
+        "noise==0.0 (validator bug)"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "high",
+        "sensor_noise_level": 0.0,
+        "adversarial_camouflage": false,
+        "visibility_km": 10.0,
+        "difficulty": "easy",
+        "description": "Clear daytime with high target density and zero sensor noise, optimal baseline conditions."
+      }
+    },
+    {
+      "run": 4,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, no adversarial camouflage, high visibility."
+      }
+    },
+    {
+      "run": 4,
+      "item": 7,
+      "causes": [
+        "weather=hazy"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.7,
+        "difficulty": "easy",
+        "description": "Hazy daytime conditions with low target density, minimal sensor noise, no adversarial camouflage, high visibility."
+      }
+    },
+    {
+      "run": 4,
+      "item": 10,
+      "causes": [
+        "weather=rainy",
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "dusk",
+        "target_density": "low",
+        "sensor_noise_level": 0.4,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.6,
+        "difficulty": "easy",
+        "description": "Rainy dusk conditions with low target density, low sensor noise, no adversarial camouflage, medium visibility."
+      }
+    },
+    {
+      "run": 5,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and high visibility for straightforward detection tasks."
+      }
+    },
+    {
+      "run": 5,
+      "item": 5,
+      "causes": [
+        "weather=snowy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "day",
+        "target_density": "medium",
+        "sensor_noise_level": 0.25,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.7,
+        "difficulty": "easy",
+        "description": "Snowy daytime with medium target density and low sensor noise, offering moderate visibility for effective detection."
+      }
+    },
+    {
+      "run": 5,
+      "item": 9,
+      "causes": [
+        "weather=foggy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "foggy",
+        "time_of_day": "day",
+        "target_density": "high",
+        "sensor_noise_level": 0.25,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.1,
+        "difficulty": "easy",
+        "description": "Foggy daytime with high target density and minimal sensor noise, providing a test of detection under reduced visibility."
+      }
+    },
+    {
+      "run": 6,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and high visibility for standard object detection."
+      }
+    },
+    {
+      "run": 6,
+      "item": 7,
+      "causes": [
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "night",
+        "target_density": "medium",
+        "sensor_noise_level": 0.5,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.9,
+        "difficulty": "easy",
+        "description": "Clear night conditions with medium target density and moderate sensor noise, providing a baseline for night-time detection."
+      }
+    },
+    {
+      "run": 7,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and no adversarial camouflage. Ideal for baseline object detection performance."
+      }
+    },
+    {
+      "run": 7,
+      "item": 9,
+      "causes": [
+        "weather=rainy"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 6.8,
+        "difficulty": "easy",
+        "description": "Rainy daytime with low target density and minimal sensor noise. Simple scenario for baseline detection performance in wet conditions."
+      }
+    },
+    {
+      "run": 8,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and high visibility for straightforward object detection."
+      }
+    },
+    {
+      "run": 8,
+      "item": 10,
+      "causes": [
+        "weather=snowy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.1,
+        "difficulty": "easy",
+        "description": "Snowy daytime with low target density and low sensor noise, providing a relatively easy detection scenario."
+      }
+    },
+    {
+      "run": 9,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and high visibility for straightforward object detection."
+      }
+    },
+    {
+      "run": 9,
+      "item": 7,
+      "causes": [
+        "time=dusk"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "dusk",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.7,
+        "difficulty": "easy",
+        "description": "Clear dusk conditions with low target density, minimal sensor noise, and high visibility for easy detection."
+      }
+    },
+    {
+      "run": 10,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime with low target density and minimal sensor noise, ideal for baseline object detection."
+      }
+    },
+    {
+      "run": 10,
+      "item": 7,
+      "causes": [
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "night",
+        "target_density": "medium",
+        "sensor_noise_level": 0.55,
+        "adversarial_camouflage": false,
+        "visibility_km": 7.4,
+        "difficulty": "easy",
+        "description": "Clear nighttime with medium target density and moderate sensor noise, baseline scenario for low-light detection."
+      }
+    },
+    {
+      "run": 10,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.4,
+        "adversarial_camouflage": false,
+        "visibility_km": 6.8,
+        "difficulty": "easy",
+        "description": "Hazy daytime with low target density and low sensor noise, simple environment for initial validation."
+      }
+    },
+    {
+      "run": 11,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.2,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and high visibility for baseline detection."
+      }
+    },
+    {
+      "run": 11,
+      "item": 8,
+      "causes": [
+        "weather=rainy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.25,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.5,
+        "difficulty": "easy",
+        "description": "Rainy daytime with low target density, providing a simple scenario with moderate visibility for baseline testing."
+      }
+    },
+    {
+      "run": 11,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "time=night"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.3,
+        "difficulty": "easy",
+        "description": "Hazy night with low target density, offering high visibility and minimal detection challenges."
+      }
+    },
+    {
+      "run": 12,
+      "item": 7,
+      "causes": [
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 6.7,
+        "difficulty": "easy",
+        "description": "Clear night with low target density, low sensor noise, no adversarial camouflage, 6.7 km visibility"
+      }
+    },
+    {
+      "run": 12,
+      "item": 10,
+      "causes": [
+        "weather=snowy",
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.3,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.3,
+        "difficulty": "easy",
+        "description": "Snowy night with low target density, low sensor noise, no adversarial camouflage, 3.3 km visibility"
+      }
+    },
+    {
+      "run": 13,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime with low target density, minimal sensor noise, and optimal visibility for standard object detection."
+      }
+    },
+    {
+      "run": 13,
+      "item": 4,
+      "causes": [
+        "weather=rainy",
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.3,
+        "adversarial_camouflage": false,
+        "visibility_km": 2.7,
+        "difficulty": "easy",
+        "description": "Rainy night with low target density, low sensor noise, and clear visibility for basic object detection in adverse weather."
+      }
+    },
+    {
+      "run": 13,
+      "item": 8,
+      "causes": [
+        "weather=rainy"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 6.4,
+        "difficulty": "easy",
+        "description": "Rainy day with low target density, minimal sensor noise, and excellent visibility for simple detection in light rain."
+      }
+    },
+    {
+      "run": 14,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear day with low target density, minimal sensor noise, no adversarial camouflage"
+      }
+    },
+    {
+      "run": 14,
+      "item": 6,
+      "causes": [
+        "weather=hazy",
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "dusk",
+        "target_density": "medium",
+        "sensor_noise_level": 0.4,
+        "adversarial_camouflage": false,
+        "visibility_km": 1.5,
+        "difficulty": "easy",
+        "description": "Hazy dusk with medium target density, moderate sensor noise"
+      }
+    },
+    {
+      "run": 14,
+      "item": 7,
+      "causes": [
+        "time=night"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.7,
+        "difficulty": "easy",
+        "description": "Clear night with low target density and high visibility"
+      }
+    },
+    {
+      "run": 15,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear day with low target density, minimal sensor noise, and high visibility for basic detection tasks."
+      }
+    },
+    {
+      "run": 15,
+      "item": 4,
+      "causes": [
+        "weather=rainy",
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.25,
+        "adversarial_camouflage": false,
+        "visibility_km": 2.1,
+        "difficulty": "easy",
+        "description": "Rainy night with low target density and clear visibility for straightforward detection scenarios."
+      }
+    },
+    {
+      "run": 15,
+      "item": 9,
+      "causes": [
+        "weather=foggy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "foggy",
+        "time_of_day": "day",
+        "target_density": "medium",
+        "sensor_noise_level": 0.55,
+        "adversarial_camouflage": false,
+        "visibility_km": 2.9,
+        "difficulty": "easy",
+        "description": "Foggy day with medium target density for simple detection tasks with reduced visibility."
+      }
+    },
+    {
+      "run": 15,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 7.2,
+        "difficulty": "easy",
+        "description": "Hazy night with low target density and high visibility for basic detection tasks."
+      }
+    },
+    {
+      "run": 16,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.2,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density and minimal sensor noise"
+      }
+    },
+    {
+      "run": 16,
+      "item": 5,
+      "causes": [
+        "weather=snowy",
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "dusk",
+        "target_density": "low",
+        "sensor_noise_level": 0.21,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.5,
+        "difficulty": "easy",
+        "description": "Snowy dusk conditions with low target density and low sensor noise"
+      }
+    },
+    {
+      "run": 16,
+      "item": 10,
+      "causes": [
+        "weather=snowy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "day",
+        "target_density": "high",
+        "sensor_noise_level": 0.45,
+        "adversarial_camouflage": false,
+        "visibility_km": 2.4,
+        "difficulty": "easy",
+        "description": "Snowy daytime with high target density and low sensor noise"
+      }
+    },
+    {
+      "run": 17,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and no adversarial camouflage. Ideal for baseline detection performance."
+      }
+    },
+    {
+      "run": 17,
+      "item": 5,
+      "causes": [
+        "weather=snowy"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.2,
+        "difficulty": "easy",
+        "description": "Snowy daytime with low target density and high visibility, providing a clean reference for evaluating detection in pristine snow conditions."
+      }
+    },
+    {
+      "run": 17,
+      "item": 10,
+      "causes": [
+        "weather=snowy",
+        "time=night"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.05,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.5,
+        "difficulty": "easy",
+        "description": "Snowy night with low target density and minimal sensor noise, ideal for baseline detection under clean snow conditions with high visibility."
+      }
+    },
+    {
+      "run": 18,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, no adversarial camouflage, high visibility for straightforward detection"
+      }
+    },
+    {
+      "run": 18,
+      "item": 5,
+      "causes": [
+        "weather=snowy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.25,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.4,
+        "difficulty": "easy",
+        "description": "Snowy daytime with low target density, low sensor noise, no camouflage, moderate visibility for easy detection"
+      }
+    },
+    {
+      "run": 18,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "day",
+        "target_density": "high",
+        "sensor_noise_level": 0.6,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.7,
+        "difficulty": "easy",
+        "description": "Hazy daytime with high target density, moderate sensor noise, no camouflage, moderate visibility for easy detection"
+      }
+    },
+    {
+      "run": 19,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density and minimal sensor noise, ideal for baseline detection performance."
+      }
+    },
+    {
+      "run": 19,
+      "item": 7,
+      "causes": [
+        "time=night"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear nighttime with low target density and minimal sensor noise, providing a baseline for low-illumination scenarios."
+      }
+    },
+    {
+      "run": 20,
+      "item": 8,
+      "causes": [
+        "weather=rainy",
+        "camouflage",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.5,
+        "adversarial_camouflage": true,
+        "visibility_km": 3.0,
+        "difficulty": "easy",
+        "description": "Rainy daytime with low target density, moderate sensor noise, adversarial camouflage, and medium visibility for simple detection tasks."
+      }
+    },
+    {
+      "run": 20,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "day",
+        "target_density": "medium",
+        "sensor_noise_level": 0.3,
+        "adversarial_camouflage": false,
+        "visibility_km": 6.0,
+        "difficulty": "easy",
+        "description": "Hazy daytime with medium target density, low sensor noise, no adversarial camouflage, and high visibility for easy detection tasks."
+      }
+    },
+    {
+      "run": 21,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime with low target density, minimal sensor noise, high visibility."
+      }
+    },
+    {
+      "run": 21,
+      "item": 6,
+      "causes": [
+        "weather=snowy",
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.4,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.0,
+        "difficulty": "easy",
+        "description": "Snowy night with low target density, moderate sensor noise, good visibility."
+      }
+    },
+    {
+      "run": 21,
+      "item": 10,
+      "causes": [
+        "weather=hazy"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.2,
+        "difficulty": "easy",
+        "description": "Hazy daytime with low target density, minimal sensor noise, high visibility."
+      }
+    },
+    {
+      "run": 22,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 8.5,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density and minimal sensor noise, providing optimal visibility for object detection."
+      }
+    },
+    {
+      "run": 22,
+      "item": 5,
+      "causes": [
+        "weather=snowy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.25,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.2,
+        "difficulty": "easy",
+        "description": "Snowy daytime with low target density and low sensor noise, ideal conditions for clear object detection."
+      }
+    },
+    {
+      "run": 23,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and high visibility."
+      }
+    },
+    {
+      "run": 23,
+      "item": 4,
+      "causes": [
+        "weather=rainy"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 1.2,
+        "difficulty": "easy",
+        "description": "Rainy daytime conditions with low target density, low sensor noise, and limited visibility."
+      }
+    },
+    {
+      "run": 23,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "dusk",
+        "target_density": "low",
+        "sensor_noise_level": 0.5,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.2,
+        "difficulty": "easy",
+        "description": "Hazy dusk conditions with low target density, moderate sensor noise, and moderate visibility."
+      }
+    },
+    {
+      "run": 24,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.5,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and no adversarial camouflage. Ideal for baseline detection performance."
+      }
+    },
+    {
+      "run": 24,
+      "item": 7,
+      "causes": [
+        "weather=rainy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "rainy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.4,
+        "adversarial_camouflage": false,
+        "visibility_km": 4.0,
+        "difficulty": "easy",
+        "description": "Rainy daytime with low target density, low sensor noise, and no adversarial camouflage. Baseline for rainy conditions with minimal interference."
+      }
+    },
+    {
+      "run": 24,
+      "item": 10,
+      "causes": [
+        "weather=snowy"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": false,
+        "visibility_km": 6.0,
+        "difficulty": "easy",
+        "description": "Snowy daytime with low target density, minimal sensor noise, and no adversarial camouflage. Clear conditions with minimal interference for baseline detection."
+      }
+    },
+    {
+      "run": 25,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density and minimal sensor noise for baseline object detection."
+      }
+    },
+    {
+      "run": 25,
+      "item": 12,
+      "causes": [
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "dusk",
+        "target_density": "high",
+        "sensor_noise_level": 0.5,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.7,
+        "difficulty": "easy",
+        "description": "Clear dusk with high target density for straightforward detection scenarios."
+      }
+    },
+    {
+      "run": 26,
+      "item": 8,
+      "causes": [
+        "weather=foggy",
+        "camouflage"
+      ],
+      "scenario": {
+        "weather": "foggy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.1,
+        "adversarial_camouflage": true,
+        "visibility_km": 0.5,
+        "difficulty": "easy",
+        "description": "Foggy daytime with low target density, minimal sensor noise, and adversarial camouflage for simple detection under light fog conditions."
+      }
+    },
+    {
+      "run": 26,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "camouflage",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.9,
+        "adversarial_camouflage": true,
+        "visibility_km": 0.7,
+        "difficulty": "easy",
+        "description": "Hazy daytime with low target density, high sensor noise, and adversarial camouflage for basic detection in hazy conditions."
+      }
+    },
+    {
+      "run": 27,
+      "item": 12,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "high",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 7.4,
+        "difficulty": "easy",
+        "description": "Clear daytime with high target density and minimal sensor noise."
+      }
+    },
+    {
+      "run": 28,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.2,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density and minimal sensor noise for baseline detection."
+      }
+    },
+    {
+      "run": 28,
+      "item": 5,
+      "causes": [
+        "weather=snowy",
+        "time=dusk",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "snowy",
+        "time_of_day": "dusk",
+        "target_density": "medium",
+        "sensor_noise_level": 0.6,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.1,
+        "difficulty": "easy",
+        "description": "Snowy dusk conditions with medium target density and moderate sensor noise for baseline detection."
+      }
+    },
+    {
+      "run": 29,
+      "item": 1,
+      "causes": [
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "clear",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.15,
+        "adversarial_camouflage": false,
+        "visibility_km": 5.3,
+        "difficulty": "easy",
+        "description": "Clear daytime conditions with low target density, minimal sensor noise, and high visibility for baseline detection."
+      }
+    },
+    {
+      "run": 29,
+      "item": 8,
+      "causes": [
+        "weather=foggy",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "foggy",
+        "time_of_day": "day",
+        "target_density": "low",
+        "sensor_noise_level": 0.31,
+        "adversarial_camouflage": false,
+        "visibility_km": 3.2,
+        "difficulty": "easy",
+        "description": "Foggy daytime with low target density and moderate sensor noise, a simpler challenge for detection systems."
+      }
+    },
+    {
+      "run": 29,
+      "item": 11,
+      "causes": [
+        "weather=hazy",
+        "time=night",
+        "noise>0.10"
+      ],
+      "scenario": {
+        "weather": "hazy",
+        "time_of_day": "night",
+        "target_density": "low",
+        "sensor_noise_level": 0.29,
+        "adversarial_camouflage": false,
+        "visibility_km": 0.6,
+        "difficulty": "easy",
+        "description": "Hazy nighttime with low target density and low sensor noise, a straightforward challenge for detection systems."
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+path: .
+train: <DATASET>\train\images
+val: <PROJECT>\dataset\ms_eval_framework\SCN_009\images
+nc: 4
+names:
+  0: military_tank
+  1: military_truck
+  2: military_vehicle
+  3: soldier

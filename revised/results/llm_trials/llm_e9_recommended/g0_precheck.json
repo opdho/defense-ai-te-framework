@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MC1",
+    "satisfied": true,
+    "matched_scenarios": [
+      "SCN_011"
+    ]
+  },
+  {
+    "id": "MC2",
+    "satisfied": true,
+    "matched_scenarios": [
+      "SCN_012"
+    ]
+  }
+]

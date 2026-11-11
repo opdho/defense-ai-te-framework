@@ -1,0 +1,12 @@
+a) all_same = True g0_missing = []
+   {'model': 'model_A', 'old_05': 'FAIL', 'old_in_manifest': False, 'new_05b': 'FAIL (g2_adverse_map50, g3_rpc50, g4_critical_failure_count)', 'same': True}
+   {'model': 'model_B', 'old_05': 'FAIL', 'old_in_manifest': False, 'new_05b': 'FAIL (g4_critical_failure_count)', 'same': True}
+   {'model': 'model_C', 'old_05': 'FAIL', 'old_in_manifest': False, 'new_05b': 'FAIL (g2_adverse_map50, g4_critical_failure_count)', 'same': True}
+   {'model': 'model_D', 'old_05': 'FAIL', 'old_in_manifest': False, 'new_05b': 'FAIL (g2_adverse_map50, g3_rpc50, g4_critical_failure_count)', 'same': True}
+   {'model': 'model_A_rep', 'old_05': 'FAIL', 'old_in_manifest': False, 'new_05b': 'FAIL (g2_adverse_map50, g3_rpc50, g4_critical_failure_count)', 'same': True}
+   {'model': 'model_B_rep', 'old_05': 'FAIL', 'old_in_manifest': False, 'new_05b': 'FAIL (g4_critical_failure_count)', 'same': True}
+   {'model': 'model_C_clean', 'old_05': 'FAIL', 'old_in_manifest': False, 'new_05b': 'FAIL (g2_adverse_map50, g4_critical_failure_count)', 'same': True}
+b) ['MC1'] {'model_A': 'INCOMPLETE (G0: MC1)', 'model_B': 'INCOMPLETE (G0: MC1)', 'model_C': 'INCOMPLETE (G0: MC1)', 'model_D': 'INCOMPLETE (G0: MC1)'} deployed = []
+c) gemma4:12b {'manifest_files': 30, 'with_llm_source': 30, 'MC1': 10, 'MC2': 24, 'both': 4, 'expected_n_MC1_MC2_both': (30, 10, 24, 4), 'matches_expected': True}
+c) qwen3:4b {'manifest_files': 30, 'with_llm_source': 10, 'MC1': 9, 'MC2': 10, 'both': 9, 'expected_n_MC1_MC2_both': (10, 9, 10, 9), 'matches_expected': True}
+c) qwen3.5:9b {'manifest_files': 30, 'with_llm_source': 12, 'MC1': 9, 'MC2': 9, 'both': 7, 'expected_n_MC1_MC2_both': (12, 9, 10, 7), 'matches_expected': False}

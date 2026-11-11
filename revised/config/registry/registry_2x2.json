@@ -1,0 +1,39 @@
+{
+  "registry_name": "revision_2x2_architecture_x_recipe",
+  "class_names": [
+    "military_tank",
+    "military_truck",
+    "military_vehicle",
+    "soldier"
+  ],
+  "models": [
+    {
+      "model_id": "model_A",
+      "display_name": "Candidate A (YOLO11n, base recipe)",
+      "weights": "<PROJECT>/test_framework/demo_model_A.pt",
+      "md5": "b7950fc30aeb4ad6c09518cc6086abfc",
+      "notes": "Submission weights (run model_A_fast2, trained on the submission PC). yolo11n.pt, 4-class train only, 01 script (epochs 45, weak augmentation), seed 42."
+    },
+    {
+      "model_id": "model_B",
+      "display_name": "Candidate B (YOLO11s, robust recipe)",
+      "weights": "<PROJECT>/test_framework/demo_model_B.pt",
+      "md5": "cf08599064851773e821d67abaaf56b4",
+      "notes": "Submission weights (run model_B_fast, trained on the submission PC). yolo11s.pt, 4-class train + augmented_model_B, 02 script (epochs 70, strong augmentation), seed 42."
+    },
+    {
+      "model_id": "model_C",
+      "display_name": "Candidate C (YOLO11n, robust recipe)",
+      "weights": "<PROJECT>/revision/weights/model_C_n_robust.pt",
+      "md5": "b34f39a6bd8ef38297d321bd21940eb6",
+      "notes": "Revision weights (the experiment machine, 2026-10-28/29). yolo11n.pt, 4-class train + augmented_model_B, 02 script, seed 42. workers 8 for epochs 1-60, resumed from last.pt with workers 4 for epochs 61-70."
+    },
+    {
+      "model_id": "model_D",
+      "display_name": "Candidate D (YOLO11s, base recipe)",
+      "weights": "<PROJECT>/revision/weights/model_D_s_base.pt",
+      "md5": "fcfcfb88939456476df07a64a549c1c7",
+      "notes": "Revision weights (the experiment machine, 2026-10-29). yolo11s.pt, 4-class train only, 01 script, seed 42, workers 4."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# Model B (general and robust) — FAIL
+
+```
+##########################################################################
+Framework T&E Feedback Report — FAIL
+##########################################################################
+model          : Model B (general and robust)
+evaluation time: 2026-04-16 08:18
+policy         : NIST fit-for-purpose + COCO metrics + corruption robustness demo gate
+judgment       : FAIL
+
+1. Executive Summary
+  - clean_map50           : 0.7694
+  - clean_map50_95        : 0.5259
+  - mPC50                 : 0.6265
+  - rPC50                 : 0.8143
+  - adverse_map50         : 0.5378
+  - worstcase_map50       : 0.1156
+  - critical_failure_count: 1
+
+2. Gate Decision Basis
+  - PASS: clean_map50 >= 0.7 (observed 0.7694)
+  - PASS: adverse_map50 >= 0.5 (observed 0.5378)
+  - PASS: rpc50 >= 0.65 (observed 0.8143)
+  - FAIL: critical_failure_count <= 0 (observed 1.0000)
+
+3. Failure Diagnosis
+  The model did not meet one or more robustness gates and should be blocked from automatic deployment.
+
+4. Primary Remediation Targets
+  - critical_failure_count: observed 1.0000, required <= 0
+
+5. Worst-case Scenarios
+  - [SCN_011] critical/fog+night+noise+camo mAP50=0.1156 relative_to_clean=0.1502
+  - [SCN_007] adverse/fog+night+camo mAP50=0.4729 relative_to_clean=0.6147
+  - [SCN_012] critical/rain+night+noise+camo mAP50=0.5768 relative_to_clean=0.7497
+  - [SCN_010] adverse/fog+camo mAP50=0.6265 relative_to_clean=0.8144
+  - [SCN_009] adverse/snow+night mAP50=0.6981 relative_to_clean=0.9074
+
+6. Suggested Next Actions
+  - augment training or adaptation data for failed corruption families
+  - retrain or swap candidate weights, then rerun the same automated scenario suite
+  - review critical scenarios with human operators before redefining policy thresholds
+
+##########################################################################
+```

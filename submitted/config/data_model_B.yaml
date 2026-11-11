@@ -1,0 +1,10 @@
+train:
+- <DATASET>\train\images
+- <WORKDIR>\test4\augmented_model_B\train\images
+val: <DATASET>\val\images
+nc: 4
+names:
+- military_tank
+- military_truck
+- military_vehicle
+- soldier

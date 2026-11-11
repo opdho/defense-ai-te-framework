@@ -1,0 +1,28 @@
+{
+  "g0_coverage": [
+    {
+      "id": "MC1",
+      "satisfied": true,
+      "matched_scenarios": [
+        "SCN_011"
+      ]
+    },
+    {
+      "id": "MC2",
+      "satisfied": true,
+      "matched_scenarios": [
+        "SCN_012"
+      ]
+    }
+  ],
+  "g0_missing": [],
+  "verdicts": {
+    "model_A": "FAIL (g2_adverse_map50, g3_rpc50, g4_critical_failure_count)",
+    "model_B": "FAIL (g4_critical_failure_count)",
+    "model_A_rep": "FAIL (g2_adverse_map50, g3_rpc50, g4_critical_failure_count)",
+    "model_B_rep": "FAIL (g4_critical_failure_count)",
+    "model_C_clean": "FAIL (g4_critical_failure_count)",
+    "model_D": "FAIL (g2_adverse_map50, g4_critical_failure_count)"
+  },
+  "deployed": []
+}
